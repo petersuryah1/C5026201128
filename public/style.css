@@ -1,0 +1,156 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#page {
+  padding-top: 1rem;
+}
+
+#fav {
+  padding-top: 1px;
+}
+
+#fav1 {
+  padding: 14px 40px;
+}
+
+#share {
+  padding: 14px 40px;
+}
+
+#favo {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 110px;
+  font-size: small;
+}
+
+#garis {
+  padding: 10px;
+  border: none;
+  width: 10pc;
+}
+
+#share1 {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 110px;
+  font-size: small;
+}
+
+#btn-fav {
+  color: black;
+}
+#btn-fav:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+#btn-fav:hover {
+  color: red;
+  background-color: transparent;
+}
+
+#btn-share {
+  color: black;
+}
+#btn-share:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+#btn-share:hover {
+  color: red;
+  background-color: transparent;
+}
+
+#icon {
+  color: black;
+}
+#icon:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+#icon:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+#chat {
+  width: 100px;
+  color: black;
+}
+
+#chat:hover {
+  background-color: #e7e7e7;
+}
+
+#kjg {
+  width: 225px;
+  color: black;
+}
+
+#kjg:hover {
+  background-color: #e7e7e7;
+}
+
+#buy {
+  width: 280px;
+  background-color: #ec0e49;
+}
+
+#buy:hover {
+  background-color: #c10b3c;
+}
+
+#send {
+  padding-top: 8px;
+}
+
+.table {
+  column-rule-style: none;
+  height: 50px;
+  border-style: none;
+}
+
+#change {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+#change1 {
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+#change1:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+#change1:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+.fa-star {
+  color: gold;
+}
+
+p {
+  line-height: 1.5;
+}
+
+hr {
+  color: #afaeae;
+}
+
+.col-sm-auto {
+  padding-top: 1rem;
+  width: 75px;
+  align-content: flex-start;
+}
