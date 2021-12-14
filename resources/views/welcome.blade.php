@@ -83,7 +83,7 @@
                 <div class="title m-b-md">
                     Peter Surya Hariyanto
                     <br>
-                    5026201128
+                    5026201128 Sistem Informasi
                 </div>
 
                 <div class="links">
