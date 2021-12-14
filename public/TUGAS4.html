@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Set Content</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test1").text("1. Kucing");
+  });
+  $("#btn2").click(function(){
+    $("#test2").html("2. Mamalia");
+  });
+  $("#btn3").click(function(){
+    $("#test3").val("Gajah adalah hewan herbivora");
+  });
+});
+</script>
+</head>
+<body>
+<div class="container">
+<h1 style="text-align: center;">Lembar Jawaban Siswa</h1>
+<hr>
+<p>
+Nama     : Putra Dwi Laksono<br>
+Kelas    : XI-IPA<br>
+Pertanyaan <br>
+1. Hewan peliharaan selain anjing yang sering dijumpai adalah..<br>
+2. Bahasa lain dari serangga yaitu..<br>
+3. Gajah memakan tumbuh-tumbuhan, maka ..<br>
+Jawaban <br>
+1. Beruang <br>
+2. Insektida <br>
+3. Gajah adalah hewan karnivora <br>
+</p>
+<p>Kunci Jawaban : </p>
+<p id="test1">Nomor 1</p>
+<p id="test2">Nomor 2</p>
+
+<p>Jawaban no 3 : <input type="text" id="test3" value=""></p>
+
+<button id="btn1">Nomor 1</button>
+<button id="btn2">Nomor 2</button>
+<button id="btn3">Nomor 3</button>
+<P>*Laman ini hanya untuk guru</P>
+</div>
+</body>
+</html>

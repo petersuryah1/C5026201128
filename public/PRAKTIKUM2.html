@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Praktikum PWEB 2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+         margin: 0;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+    <form action="/action_page.php" class="needs-validation" no validate>
+            <h1>Registration Form</h1>
+            <div class="form-group">
+                <label for="usr">User ID :</label>
+                <input type="text" class="form-control" id="usr" placeholder="Enter ID (Must be length 5 to 12)" name="usr"
+                    pattern="(?=.*[A-Z])(?=.*[0-9]).{5,12}" title="User ID should contain uppercase and number" required>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Password :</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password (Must be length 7 to 12" name="pwd"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,12}" title="Password should contain lowercase, uppercase, and number" required>
+            </div>
+            <div class="form-group">
+                <label for="usr">Name :</label>
+                <input type="text" class="form-control" id="usr" pattern="(?=.*[A-Z])(?=.*[a-z].{,30})"
+                placeholder= "Fill out your name" title="Name should contain lowercase and uppercase alphabet" required>
+            </div>
+            <div class="form-group">
+                <label for="usr">Address :</label>
+                <input type="text" placeholder="Optional" class="form-control" id="usr">
+            </div>
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect" required>Country :</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+                        <option selected>(Please select a country)</option>
+                        <option value="1">Indonesia</option>
+                        <option value="2">Singapore</option>
+                        <option value="3">Malaysia</option>
+                        <option value="4">Thailand</option>
+                        <option value="5">Vietnam</option>
+                        <option value="6">Cambodia</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-auto my-1">
+                    <label for="usr">ZIP Code :</label>
+                    <input type="number" class="form-control" id="usr" pattern="(?=.*\d.{3,30})"
+                    title="ZIP Code should contain number only" required>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email :</label>
+                    <span class="col">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-12">
+                Sex :
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" required>Male
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" required>Female
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                Language :
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check1">
+                        <input type="checkbox" class="form-check-input" id="check1" name="vehicle1"
+                            value="something" checked>English
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check2">
+                        <input type="checkbox" class="form-check-input" id="check2" name="vehicle2"
+                            value="something">Non English
+                    </label>
+                </div>
+            </div>
+
+                <div class="form-group col-12">
+                    <label for="comment">About :</label>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Optional"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+</div>
+</body>
+
+</html>

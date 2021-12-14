@@ -91,10 +91,10 @@
                     <a href="TUGAS2.html">TUGAS 2</a>
                     <a href="TUGAS3.html">TUGAS 3</a>
                     <a href="PRAKTIKUM1.html">PRAKTIKUM 1</a>
-                    <a href="https://nova.laravel.com">TUGAS 4</a>
-                    <a href="https://forge.laravel.com">PRAKTIKUM 2</a>
-                    <a href="https://github.com/laravel/laravel">ETS</a>
-                    <a href="https://github.com/laravel/laravel">TUGAS PHP</a>
+                    <a href="TUGAS4.html">TUGAS 4</a>
+                    <a href="PRAKTIKUM2.html">PRAKTIKUM 2</a>
+                    <a href="ETS.html">ETS</a>
+                    <a href="TUGASPHP.html">TUGAS PHP</a>
                 </div>
             </div>
         </div>

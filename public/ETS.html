@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UTS PWEB</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <style>
+         input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+         margin: 0;
+        }
+    </style>
+    <script>
+        function myFunction() {
+          document.getElementById("myForm").reset();
+        }
+        </script>
+</head>
+<body style="border-width: 6px;">
+    <div class="container">
+        <div class="datadiri col-sm-4">
+            Peter Surya Hariyanto
+            <br>
+            Peter
+            <br>
+            5026201128
+        </div>
+        <h2 style="text-align: center;">Form Input Peserta Vaksinasi</h2>
+        <form id="myForm"method="get" action="">
+            <div class="form-group">
+                <label for="usr">Nama :</label>
+                <input type="text" class="form-control" id="usr" pattern="(?=.*[A-Z])(?=.*[a-z].{,30})"
+                placeholder= "Isi nama anda" title="Nama pakai huruf besar dan kecil" required>
+            </div>
+            <div class="form-group row">
+                <div class="col">
+                    <label for="usr">NIK :</label>
+                    <input type="number" class="form-control" id="usr" pattern="(?=.*\d.{3,30})" placeholder="Masukkan NIK anda"
+                    title="ZIP Code should contain number only" required>
+                </div>
+            </div>
+            <div class="form-row align-items-center">
+                <div class="col">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect" required>Jenis Vaksin :</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+                        <option selected>(Pilih jenis vaksin)</option>
+                        <option value="1">AZ</option>
+                        <option value="2">Sinovac</option>
+                        <option value="3">Moderna</option>
+                </select>
+                </div>
+            </div>
+            <div class="form-group col">
+                <label for="usr">No Batch :</label>
+                <input type="text" class="form-control" id="usr" placeholder="Masukkan NoBatch" name="usr"
+                    pattern="(?=.*[A-Z])(?=.*[0-9]).{5,12}" title="User ID should contain uppercase and number" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="color: black;">Simpan</button>
+            <button type="submit" class="btn btn-primary" value="Reset form" style=" color: black; background-color: rgb(83, 253, 83);">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
